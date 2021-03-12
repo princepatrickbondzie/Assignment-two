@@ -1,0 +1,39 @@
+/* style rules for contact section */
+
+#contact {
+  background: #24527e;
+  color: #effaff;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .contact-inner {
+  padding-top: 150px;
+}
+
+/* #contact .contact-inner .col-12 .col-left form .contact-email .email-input,
+#contact .contact-inner .col-12 .col-left form .contact-name .name-input,
+#contact .contact-inner .col-12 .col-left form .contact-text .message-input {
+  border-radius: 3px;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  transition: 0.5s;
+  outline: none;
+} */
+
+#contact .contact-inner .col-12 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+#contact .contact-inner .col-12 .col-left form .contact-email {
+  grid-area: email;
+}
